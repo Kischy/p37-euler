@@ -6,15 +6,15 @@ using namespace testing;
 
 namespace test {
 
-//    TEST(DigitsTest, RemoveFirstDigit) {
-//        EXPECT_THAT(Digits::RemoveFirstDigit(379715), Eq(79715));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(79715), Eq(9715));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(9715), Eq(715));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(715), Eq(15));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(15), Eq(5));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(5), Eq(0));
-//        EXPECT_THAT(Digits::RemoveFirstDigit(0), Eq(0));
-//    }
+    TEST(DigitsTest, RemoveFirstDigit) {
+        EXPECT_THAT(Digits::RemoveFirstDigit(379715), Eq(79715));
+        EXPECT_THAT(Digits::RemoveFirstDigit(79715), Eq(9715));
+        EXPECT_THAT(Digits::RemoveFirstDigit(9715), Eq(715));
+        EXPECT_THAT(Digits::RemoveFirstDigit(715), Eq(15));
+        EXPECT_THAT(Digits::RemoveFirstDigit(15), Eq(5));
+        EXPECT_THAT(Digits::RemoveFirstDigit(5), Eq(0));
+        EXPECT_THAT(Digits::RemoveFirstDigit(0), Eq(0));
+    }
 
 
     TEST(DigitsTest, RemoveLastDigit) {

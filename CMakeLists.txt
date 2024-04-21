@@ -9,6 +9,8 @@ add_executable(p37_euler
         src/PrimeSieve.h
         src/Digits.cpp
         src/Digits.h
+        src/TruncatablePrime.cpp
+        src/TruncatablePrime.h
 )
 
 find_package(GTest REQUIRED)
@@ -19,6 +21,9 @@ add_executable(p37_euler_test
         src/Digits.cpp
         src/Digits.h
         unit_tests/DigitsTest.cpp
+        src/TruncatablePrime.cpp
+        src/TruncatablePrime.h
+        unit_tests/TruncatablePrimeTest.cpp
 )
 target_include_directories(p37_euler_test PRIVATE src)
 target_link_libraries(p37_euler_test PRIVATE GTest::gtest GTest::gmock GTest::gmock_main)

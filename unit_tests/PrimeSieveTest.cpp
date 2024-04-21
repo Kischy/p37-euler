@@ -13,14 +13,14 @@ namespace test {
 
     };
     TEST_F(PrimeSieveTest,PrimeCases) {
-        std::deque<uint64_t> primes{2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97, 971, 197, 719, 41};
+        std::deque<size_t> primes{2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97, 971, 197, 719, 41};
         for (const auto prime: primes) {
             EXPECT_THAT(primeSieve.IsPrime(prime), Eq(true));
         }
     }
 
     TEST_F(PrimeSieveTest,NonPrimeCases) {
-        std::deque<uint64_t> primes{0,100,6,1,33};
+        std::deque<size_t> primes{0,100,6,1,33};
         for(const auto prime : primes) {
             EXPECT_THAT(primeSieve.IsPrime(prime), Eq(false));
         }
