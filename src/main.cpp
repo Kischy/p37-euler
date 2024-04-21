@@ -18,7 +18,7 @@ int main() {
     }
 
     if(truncatablePrimes.size() != N_primesToFind) {
-        std::cout << "Only found " << truncatablePrimes.size() << "truncatable primes. Increase upperBound.\n";
+        std::cout << "Only found " << truncatablePrimes.size() << " truncatable primes. Increase upperBound.\n";
         return 1;
     }
 
