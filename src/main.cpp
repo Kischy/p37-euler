@@ -1,6 +1,6 @@
-#include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+//    PrimeSieve primeSieve;
+//    std::cout << primeSieve.foo()  << std::endl;
     return 0;
 }
